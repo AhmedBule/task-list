@@ -22,6 +22,11 @@ function addTask(e) {
         alert("Add a task");
     }
 
+    // Create li element
+    let li = document.creatElement("li");
+    // Add class
+    li.className = "collection-item"
 
-    e.preventDefault()
+
+    e.preventDefault()          // It prevent the submission to occur. 
 }
