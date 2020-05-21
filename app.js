@@ -30,7 +30,14 @@ function addTask(e) {
     li.appendchild(document.createTextNode(taskInput.value));
 // Create new link element
 let link = document.createElement("a");
-link.className
+link.className = "delete-item secondary-content";
+
+// Add icon html 
+link.innerHTML = '<i class="fa fa-remove"></i>';
+
+//Append the link to li
+li.appendchild(link);
+
 
 
     e.preventDefault()          // It prevent the submission to occur. 
