@@ -24,8 +24,13 @@ function addTask(e) {
 
     // Create li element
     let li = document.creatElement("li");
-    // Add class
-    li.className = "collection-item"
+    // Add a class
+    li.className = "collection-item";
+// Create text node and append to li
+    li.appendchild(document.createTextNode(taskInput.value));
+// Create new link element
+let link = document.createElement("a");
+link.className
 
 
     e.preventDefault()          // It prevent the submission to occur. 
